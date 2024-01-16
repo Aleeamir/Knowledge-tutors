@@ -3,8 +3,9 @@
         <div class="nav-inner">
             <div class="logo">
                 <router-link to="/" class="logo-link">
-                    <img
-                        src="https://assets-global.website-files.com/636278799c5de66b6357762e/63a5ed608cfe91252bca83f1_TutorMe%20Logo.svg" />
+                    <!-- <img
+                        src="@/assets/Images/logo.png" /> -->
+                        <h1>KNOWLEDGE <br> TUTORS</h1>
                 </router-link>
             </div>
             <div class="inner-nav">
@@ -26,6 +27,12 @@
     </nav>
 </template>
 <style scoped>
+.logo-link {
+    text-decoration-line: none;
+}
+.logo-link h1 {
+    color: #1c8754;
+}
 .inner-nav a {
     text-decoration: none;
     color: black;
