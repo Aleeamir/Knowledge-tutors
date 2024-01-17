@@ -3,15 +3,15 @@
         <div class="nav-inner">
             <div class="logo">
                 <router-link to="/" class="logo-link">
-                    <!-- <img
-                        src="@/assets/Images/logo.png" /> -->
-                        <h1>KNOWLEDGE <br> TUTORS</h1>
+                    <img
+                        src="@/assets/Images/logo2.png" />
+                        <!-- <h1>KNOWLEDGE <br> TUTORS</h1> -->
                 </router-link>
             </div>
             <div class="inner-nav">
                 <RouterLink to="/">Who We Serve
                 </RouterLink>
-                <RouterLink to="/Accessories">
+                <RouterLink to="/BecomeTutor">
                     Become A Tutor</RouterLink>
                 <RouterLink to="/Women">
                     Resources
@@ -21,23 +21,26 @@
             </div>
             <div class="sidenav">
                 <RouterLink to="/About">Login</RouterLink>
-                <router-link to="/Accessories"><button class="button-1">Shop Now</button></router-link>
+                <router-link to="/Accessories"><button class="button-1">Call Now</button></router-link>
             </div>
         </div>
     </nav>
 </template>
 <style scoped>
-.logo-link {
+/* .logo-link img {
     text-decoration-line: none;
-}
+    width: 147px;
+    height: 50px;
+} */
 .logo-link h1 {
-    color: #1c8754;
+    color: #d4f559;
 }
 .inner-nav a {
     text-decoration: none;
     color: black;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
+    /* background-color: #7874; */
 }
 
 .sidenav {
@@ -64,7 +67,7 @@ nav .nav-inner {
 }
 
 .nav .nav-inner {
-    background-color: white;
+    background-color: #7874;
     position: fixed;
     top: 0;
     left: 0;
@@ -102,7 +105,7 @@ nav .nav-inner {
 
 .button-1 {
     appearance: button;
-    background-color: #ecf0f1;
+    background-color: #7874;
     border: solid transparent;
     border-radius: 16px;
     border-width: 0 0 4px;
