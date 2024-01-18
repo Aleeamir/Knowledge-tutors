@@ -16,7 +16,7 @@
                 <RouterLink to="/Women">
                     Resources
                 </RouterLink>
-                <RouterLink to="/Men">About
+                <RouterLink to="/About">About
                 </RouterLink>
             </div>
             <div class="sidenav">
