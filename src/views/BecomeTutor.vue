@@ -54,7 +54,7 @@
                 <img src="https://assets-global.website-files.com/636278799c5de66b6357762e/63afbdb8917c0c673951d3bb_Group%20202753.svg"
                     alt="">
                 <div class="six-text">
-                    <h1 style="text-align: center;">Join our tutor community to build student confidence and create better outcomes.
+                    <h1 style="align-items: center; margin: 0% 10% 10% 10%;">Join our tutor community to build student confidence and create better outcomes.
                     </h1>
                     <router-link to="/" style="align-items: center;margin-top: 100px;"><button class="button-2">Book A
                             Call</button></router-link>
@@ -158,6 +158,9 @@ export default {
 .bt-2-upper {
     border-bottom: 1px solid green;
 }
+.bt-2-upper h3 {
+    color: white;
+}
 
 .bt-p {
     display: flex;
@@ -169,6 +172,7 @@ export default {
 
 .bt-p p {
     font-size: 1.5rem;
+    color: white;
 }
 
 .bt-first {
@@ -251,5 +255,11 @@ p {
     touch-action: manipulation;
     vertical-align: baseline;
     margin-left: 45%;
+}
+.grid-item h4 {
+color: white;
+}
+.grid-item p {
+    color: white;
 }
 </style>

@@ -3,44 +3,49 @@
         <div class="nav-inner">
             <div class="logo">
                 <router-link to="/" class="logo-link">
-                    <img
-                        src="@/assets/Images/logo2.png" />
-                        <!-- <h1>KNOWLEDGE <br> TUTORS</h1> -->
+                    <img src="@/assets/Images/logo2.png" alt="Logo">
                 </router-link>
             </div>
             <div class="inner-nav">
-                <RouterLink to="/">Who We Serve
-                </RouterLink>
-                <RouterLink to="/BecomeTutor">
-                    Become A Tutor</RouterLink>
-                <RouterLink to="/Women">
-                    Resources
-                </RouterLink>
-                <RouterLink to="/About">About
-                </RouterLink>
+                <RouterLink to="/">Who We Serve</RouterLink>
+                <RouterLink to="/BecomeTutor">Become A Tutor</RouterLink>
+                <!-- <RouterLink to="/Women">Resources</RouterLink> -->
+                <RouterLink to="/About">About</RouterLink>
             </div>
             <div class="sidenav">
-                <RouterLink to="/About">Login</RouterLink>
-                <router-link to="/Accessories"><button class="button-1">Call Now</button></router-link>
+                <button class="button-1" @click="openWhatsAppChat">WhatsApp</button>
             </div>
         </div>
     </nav>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            phoneNumber: '+923092015567',
+            message: 'Hello, I\'d like to chat!',
+        };
+    },
+    computed: {
+        whatsappUrl() {
+            return `https://wa.me/${this.phoneNumber}?text=${encodeURIComponent(this.message)}`;
+        },
+    },
+    methods: {
+        openWhatsAppChat() {
+            window.open(this.whatsappUrl, '_blank');
+        },
+    },
+};
+
+</script>
 <style scoped>
-/* .logo-link img {
-    text-decoration-line: none;
-    width: 147px;
-    height: 50px;
-} */
-.logo-link h1 {
-    color: #d4f559;
-}
 .inner-nav a {
     text-decoration: none;
-    color: black;
-    font-size: 20px;
+    /* color: rgb(232, 220, 220); */
+    font-size: 24px;
     font-family: 'Roboto', sans-serif;
-    /* background-color: #7874; */
+    color: rgb(245, 239, 239);
 }
 
 .sidenav {
@@ -50,9 +55,7 @@
     flex-wrap: wrap;
 }
 
-/* .nav-inner {
-    background-color: rgb(10, 10, 114);
-} */
+
 nav .nav-inner {
     display: flex;
     flex-direction: row;
@@ -85,8 +88,8 @@ nav .nav-inner {
 
 .inner-nav a {
     text-decoration: none;
-    color: black;
-    font-size: 20px;
+    color: rgb(249, 247, 247);
+    font-size: 24px;
     font-family: 'Roboto', sans-serif;
     padding: 0 15px;
 }
@@ -166,4 +169,5 @@ nav .nav-inner {
 .button-1:active {
     border-width: 4px 0 0;
     background: none;
-}</style>  
+}
+</style>  

@@ -71,6 +71,7 @@
         <h1 style="text-align: center;">Start providing better support to your students and educators today.</h1>
         <router-link to="/" style="align-items: center;margin-top: 100px;"><button class="button-2">Book A
             Call</button></router-link>
+            <!-- <button class="button-2" @click="openWhatsAppChat">Book a call</button> -->
       </div>
       <img
         src="https://assets-global.website-files.com/636278799c5de66b6357762e/63afbdb8917c0c673951d3bb_Group%20202753.svg"
@@ -142,6 +143,9 @@ export default {
   display: flex;
   position: relative;
   overflow: hidden;
+}
+.lower-image img {
+  width: 1504px;
 }
 
 .review {
@@ -286,10 +290,7 @@ export default {
   font-size: 2.75rem;
   font-weight: 700;
   line-height: 1.25;
-  /* margin-top: 200px;
-    margin-right: 40px; */
   padding-top: 11%;
-  /* padding-right: 17%; */
   padding-left: 5%;
 
 }

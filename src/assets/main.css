@@ -1,7 +1,7 @@
-* {
+/* * {
   box-sizing: border-box;
   overflow-x: hidden ;
-}
+} */
 
 
 /* @import './base.css';
@@ -12,7 +12,7 @@
   padding: 2rem;
   font-weight: normal;
 }
-
+c
 a,
 .green {
   text-decoration: none;
