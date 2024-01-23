@@ -18,8 +18,6 @@
     },
     methods: {
       login() {
-        // Perform authentication logic here
-        // E.g., make an API call to your backend
         axios.post('/api/login', { email, password })
           .then(response => {
             // Handle successful login (store user data, redirect, etc.)
@@ -32,7 +30,6 @@
   };
   </script>
   <style scoped>
-/* General form styling */
 .login-form {
   display: flex;
   flex-direction: column;
@@ -43,7 +40,6 @@
   margin-bottom: 20px;
 }
 
-/* Input fields */
 .login-form input {
   margin-bottom: 10px;
   padding: 10px;
@@ -51,9 +47,8 @@
   border-radius: 3px;
 }
 
-/* Login button */
 .login-form button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50; 
   color: white;
   padding: 10px 20px;
   border: none;
@@ -61,7 +56,6 @@
   cursor: pointer;
 }
 
-/* Error message styling (optional) */
 .error-message {
   color: red;
   font-weight: bold;

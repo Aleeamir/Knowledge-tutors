@@ -8,7 +8,9 @@
                     who share that belief. Join our tutor community to support the hundreds of thousands of students already
                     using TutorMe.</p>
                 <div class="btn">
-                    <router-link to="/"><button class="button-2" style="margin-left: 0%;">Book A Call</button></router-link>
+                    <router-link to="/" @click="makePhoneCall">
+                        <button class="button-2">Book A Call</button>
+                    </router-link>
                 </div>
             </div>
             <div class="bt-first-img" style="background-color: #1c8754; margin-top: 30px;">
@@ -54,10 +56,14 @@
                 <img src="https://assets-global.website-files.com/636278799c5de66b6357762e/63afbdb8917c0c673951d3bb_Group%20202753.svg"
                     alt="">
                 <div class="six-text">
-                    <h1 style="align-items: center; margin: 0% 10% 10% 10%;">Join our tutor community to build student confidence and create better outcomes.
+                    <h1 style="align-items: center; margin: 0% 10% 10% 10%;">Join our tutor community to build student
+                        confidence and create better outcomes.
                     </h1>
-                    <router-link to="/" style="align-items: center;margin-top: 100px;"><button class="button-2">Book A
-                            Call</button></router-link>
+                    <!-- <router-link to="/" style="align-items: center;margin-top: 100px;"><button class="button-2">Book A
+                            Call</button></router-link> -->
+                    <router-link to="/" @click="makePhoneCall">
+                        <button class="button-2">Book A Call</button>
+                    </router-link>
                 </div>
                 <img src="https://assets-global.website-files.com/636278799c5de66b6357762e/63afbdb8917c0c673951d3bb_Group%20202753.svg"
                     alt="">
@@ -75,19 +81,26 @@ export default {
                 { heading: 'Use best-in-class technology', paragraph: 'Both tutors and students love the way our award-winning platform facilitates online collaboration. It has everything you need to help your students succeed, like live audio/video chat, virtual whiteboards, and screen sharing.' },
             ],
             items: [
-                { id: 1, name: 'Have a least two years of tutoring or teaching experience' },
+                { id: 1, name: 'Have at least two years of tutoring or teaching experience' },
                 { id: 2, name: 'Can demonstrate mastery of the subjects you want to tutor' },
                 { id: 3, name: 'Speak fluent, easy-to-understand English' },
                 { id: 4, name: 'Hold a degree or are currently enrolled at an accredited university' },
                 { id: 5, name: 'Are at least 18 years old' },
-                { id: 5, name: 'Live in the U.S. or one of the approved countries listed in the FAQ below' },
-                { id: 5, name: 'Are dedicated to successful learning outcomes' },
-
-
+                { id: 6, name: 'Live in the U.S. or one of the approved countries listed in the FAQ below' },
+                { id: 7, name: 'Are dedicated to successful learning outcomes' },
             ],
-        }
-    }
-}
+        };
+    },
+    methods: {
+        makePhoneCall() {
+            const phoneNumber = '+923104653407'; 
+            const phoneCallLink = `tel:${phoneNumber}`;
+
+            window.open(phoneCallLink, '_blank');
+        },
+    },
+};
+
 </script>
 <style scoped>
 .bt-forth {
@@ -95,6 +108,7 @@ export default {
     flex-direction: row;
     margin-top: 80px;
 }
+
 .bt-3-upper {
     display: flex;
     flex-direction: column;
@@ -158,6 +172,7 @@ export default {
 .bt-2-upper {
     border-bottom: 1px solid green;
 }
+
 .bt-2-upper h3 {
     color: white;
 }
@@ -256,10 +271,11 @@ p {
     vertical-align: baseline;
     margin-left: 45%;
 }
+
 .grid-item h4 {
-color: white;
-}
-.grid-item p {
     color: white;
 }
-</style>
+
+.grid-item p {
+    color: white;
+}</style>

@@ -6,8 +6,6 @@
                 <p>TutorMe helps schools, districts, colleges, and universities improve the way they deliver personalized
                     learning experiences. We connect learners with the right tutors at the right time, creating better
                     outcomes for everyone.</p>
-                <!-- <img src="https://assets-global.website-files.com/636278799c…63d7e4e1d5d1eda3b3114bac_about-us-hero-image.webp"
-                    alt=""> -->
             </div>
             <div class="about-img">
                 <img src="https://assets-global.website-files.com/636278799c5de66b6357762e/63d7e4e1d5d1eda3b3114bac_about-us-hero-image.webp"
@@ -27,19 +25,13 @@
                 <img src="@/assets/Images/about-banner.jpg" alt="">
             </div>
         </div>
-        <!-- <div class="about-3">
-            <h5>Life at Knowledge Tutor</h5>
-            <p>As part GoGuardian, we create solutions that foster educational equity and engagement, all while helping
-                learners feel inspired and ready to solve the world’s greatest challenges. We’re always looking for
-                passionate, driven individuals to join our team.</p>
-
-        </div> -->
         <div class="bt-forth">
             <img src="https://assets-global.website-files.com/636278799c5de66b6357762e/63afbdb8917c0c673951d3bb_Group%20202753.svg"
                 alt="">
             <div class="six-text">
-                <h1 style="text-align: center; margin: 30px; line-height: 50px;font-family: Ivartext,sans-serif;">Sound like a good fit?
-Check out our open roles, and find the one that's right for you.
+                <h1 style="text-align: center; margin: 30px; line-height: 50px;font-family: Ivartext,sans-serif;">Sound like
+                    a good fit?
+                    Check out our open roles, and find the one that's right for you.
                 </h1>
                 <router-link to="/" style="align-items: center;margin-top: 100px;"><button class="button-2">Book A
                         Call</button></router-link>
@@ -99,6 +91,7 @@ Check out our open roles, and find the one that's right for you.
     display: flex;
     flex-direction: row;
     flex-direction: row-reverse;
+
 
 }
 
@@ -160,10 +153,12 @@ Check out our open roles, and find the one that's right for you.
     font-size: 1.5rem;
     color: white;
 }
+
 .bt-forth {
     display: flex;
     flex-direction: row;
 }
+
 .button-2 {
     align-items: center;
     background-color: initial;
@@ -188,5 +183,4 @@ Check out our open roles, and find the one that's right for you.
     touch-action: manipulation;
     vertical-align: baseline;
     margin-left: 45%;
-}
-</style>
+}</style>

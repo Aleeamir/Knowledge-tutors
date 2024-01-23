@@ -1,4 +1,4 @@
-<!-- <template>
+<template>
     <nav>
         <div class="navigation-bar">
             <div class="logo">
@@ -41,6 +41,7 @@ export default {
 <style scoped>
 .inner-nav a {
     text-decoration: none;
+    /* color: rgb(232, 220, 220); */
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
     color: rgb(245, 239, 239);
@@ -61,6 +62,7 @@ nav .navigation-bar {
     align-items: center;
     width: 100%;
     margin: auto;
+    padding: 0% 7% 0% 7%;
 }
 
 .nav {
@@ -69,7 +71,7 @@ nav .navigation-bar {
 
 .logo-link img {
     width: 150px;
-    height: 100px;
+    height: 120px;
     padding-left: 30px;
 }
 
@@ -99,6 +101,7 @@ nav .navigation-bar {
 
 .inner-nav {
     border-right: black;
+    padding: 3% 0% 0% 0%;
 }
 
 .sidenav a {
@@ -172,24 +175,4 @@ nav .navigation-bar {
     border-width: 4px 0 0;
     background: none;
 }
-</style>  -->
-<template>
-    <HeaderMobile />
-    <HeaderDesktop />
-</template>
-<script>
-import HeaderDesktop from "@/components/HeaderDesktop.vue";
-import HeaderMobile from "@/components/HeaderMobile.vue";
-
-export default {
-    components: {
-        HeaderDesktop,
-        HeaderMobile
-    },
-    computed: {
-        isDesktop() {
-            return window.innerWidth > 1100;
-        }
-    }
-}
-</script>
+</style> 
