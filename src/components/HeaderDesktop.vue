@@ -94,14 +94,14 @@ nav .navigation-bar {
 .inner-nav a {
     text-decoration: none;
     color: rgb(249, 247, 247);
-    font-size: 24px;
+    font-size: 18px;
     font-family: 'Roboto', sans-serif;
     margin-left: 40px;
 }
 
 .inner-nav {
     border-right: black;
-    padding: 3% 0% 0% 0%;
+    /* padding: 3% 0% 0% 0%; */
 }
 
 .sidenav a {
@@ -140,6 +140,7 @@ nav .navigation-bar {
     vertical-align: middle;
     white-space: nowrap;
     width: 100%;
+    padding: 10px;
 }
 
 .button-1:after {

@@ -1,12 +1,14 @@
 <template>
   <div class="home">
     <div class="home-first">
-      <h1> Every student needs a </h1>
-      <p>{{ replacementWord }}.</p>
-      <router-link to="/About"><button class="button-2">Why TutorMe?</button></router-link>
-      <div class="banner-1"><img
-          src="https://assets-global.website-files.com/636278799c5de66b6357762e/6425b8ac662f566f966232d4_superhero.png"
-          alt="">
+      <div class="home-text-cont">
+        <h1> Every student needs a </h1>
+        <p>{{ replacementWord }}.</p>
+        <router-link to="/About"><button class="button-2">Why KT?</button></router-link>
+        <div class="banner-1"><img
+            src="https://assets-global.website-files.com/636278799c5de66b6357762e/6425b8ac662f566f966232d4_superhero.png"
+            alt="">
+        </div>
       </div>
     </div>
     <div class="home-second">
@@ -112,6 +114,10 @@ export default {
 </script>
 
 <style scoped>
+.home {
+  margin-top: -60px;
+}
+
 .home-six {
   display: flex;
   flex-direction: row;
@@ -139,9 +145,10 @@ export default {
   position: relative;
   overflow: hidden;
 }
+
 .home {
   box-sizing: border-box;
-  overflow-x: hidden ;
+  overflow-x: hidden;
 }
 
 .lower-image img {
@@ -179,44 +186,64 @@ export default {
 .grid-item p {
   background-color: #1c8754;
   margin-bottom: 1em;
-  font-size: 1.25rem;
+  font-size: 1.00rem;
   font-weight: 400;
   line-height: 1.3;
   text-align: center;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 30px;
+  /* color: white; */
 
 }
 
-.home-first h1 {
+.home-text-cont h1 {
   text-align: center;
-  /* margin-top: 100px; */
   font-family: Ttcommons, sans-serif;
-  font-size: 6.375rem;
+  font-size: 5.375rem;
   font-weight: 500;
-  /* overflow: hidden; */
   line-height: 1;
   background: transparent;
+  color: white;
+  padding-top: 3%;
 
 }
 
 .home-first {
+  position: relative;
   background-image: url('/src/assets/Images/bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-.home-first p {
+.home-first::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.home-text-cont {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+}
+
+
+
+.home-text-cont p {
   text-align: center;
-  /* margin-top: 20px; */
   font-family: Ttcommons, sans-serif;
   font-size: 6.375rem;
   font-weight: 600;
   line-height: 0;
   font-style: italic;
   overflow: visible !important;
+  color: white;
   /* padding: 30px; */
 }
 
@@ -238,13 +265,16 @@ export default {
   margin: 0;
   padding: 18px 18px;
   text-align: center;
-  text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: baseline;
   margin-left: 45%;
+  background-color: #d4f559;
+
+
 }
+
 
 .banner-1 img {
   background-size: cover;
@@ -296,7 +326,6 @@ export default {
   background-color: #a2d3ff;
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
   padding-bottom: 5%;
 }
@@ -320,7 +349,6 @@ export default {
   max-height: 413px;
   display: inline-block;
   padding-top: 9%;
-  /* padding-right: 17%; */
   padding-left: 5%;
   padding-right: 10%;
 }
@@ -329,10 +357,6 @@ export default {
   display: flex;
   flex-direction: column;
 }
-
-/* .home-fourth .banner-fourth {
-  flex-direction: row-reverse;
-} */
 
 .home-fourth h1 {
   margin-top: 0;
@@ -355,16 +379,15 @@ export default {
   flex-direction: column;
   padding-top: 15%;
   text-align: center;
-  /* align-items: center; */
 }
 
 .banner-fourth {
   display: flex;
   flex-direction: row;
 }
+
 .banner-fourth-2 {
   display: flex;
-  /* flex-direction: row; */
   flex-direction: row-reverse;
 }
 
@@ -381,7 +404,6 @@ export default {
   display: flex;
   flex-direction: row;
   background-color: #b6ad90;
-  /* padding: 40px; */
 }
 
 .home-fifth h1 {
@@ -404,11 +426,6 @@ export default {
 
 }
 
-/* .home-fifth {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-} */
 
 .inside-fifth {
   display: flex;
@@ -424,10 +441,5 @@ export default {
   display: block;
   background-color: #b6ad90;
 
-  /* background-image: image('@/assets/Images/banner1.webp'); */
 }
-
-/* .this-image {
-  background-color: #b6ad90;
-} */
 </style>

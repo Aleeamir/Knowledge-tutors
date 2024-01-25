@@ -8,6 +8,7 @@
                     who share that belief. Join our tutor community to support the hundreds of thousands of students already
                     using TutorMe.</p>
                 <div class="btn">
+                    <!-- <router-link to="/"><button @click="makePhoneCall" class="button-2" style="margin-left: 0%;">Book A Call</button></router-link> -->
                     <router-link to="/" @click="makePhoneCall">
                         <button class="button-2">Book A Call</button>
                     </router-link>
@@ -93,7 +94,7 @@ export default {
     },
     methods: {
         makePhoneCall() {
-            const phoneNumber = '+923104653407'; 
+            const phoneNumber = '+923236314550'; 
             const phoneCallLink = `tel:${phoneNumber}`;
 
             window.open(phoneCallLink, '_blank');
