@@ -320,6 +320,7 @@ export default {
   text-align: center;
   background-color: #1c8754;
   color: white;
+  padding: 0% 20% 0% 20%;
 }
 
 .home-third {

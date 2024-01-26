@@ -69,6 +69,13 @@
                 <img src="https://assets-global.website-files.com/636278799c5de66b6357762e/63afbdb8917c0c673951d3bb_Group%20202753.svg"
                     alt="">
             </div>
+            <div class="bt-fifth-location">
+                <h1>Location to visit personally</h1>
+                <div class="location">
+                    <iframe width="1202" height="450" frameborder="0" style="border:0" allowfullscreen loading="lazy"
+                        :src="googleMapLink"></iframe>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -94,12 +101,18 @@ export default {
     },
     methods: {
         makePhoneCall() {
-            const phoneNumber = '+923236314550'; 
+            const phoneNumber = '+923236314550';
             const phoneCallLink = `tel:${phoneNumber}`;
 
             window.open(phoneCallLink, '_blank');
         },
     },
+    data() {
+        return {
+            // Replace this link with your own Google Maps link
+            googleMapLink: "https://www.google.com/maps/search/68+A+block+Al+jannat+society+Raiwind+Road+Lahore/@31.4231323,74.2147744,17z/data=!3m1!4b1?hl=en-US&entry=ttu/..."
+        };
+    }
 };
 
 </script>
@@ -279,4 +292,27 @@ p {
 
 .grid-item p {
     color: white;
-}</style>
+}
+
+.bt-fifth-location h1 {
+    text-align: center;
+    background-color: grey;
+    color: white;
+    font-family: Ivartext, sans-serif;
+    padding: 40px;
+}
+
+.bt-fifth-location {
+    background-color: grey;
+    margin-top: 20px;
+}
+
+
+.location {
+    margin: 0% 10% 0% 10%;
+}
+.location iframe {
+    background-color: grey;
+    align-items: center;
+}
+</style>

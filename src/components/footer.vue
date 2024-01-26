@@ -5,31 +5,61 @@
         </div>
         <div class="f-second">
             <h4>Who We Serve</h4>
-            <p>K-12 School or District</p>
-            <p>College or University</p>
-            <h4>Resources</h4>
-            <p>Visit Resource Hub</p>
-            <p>Articles</p>
+            <router-link to="/"><p>K-12 School or District</p></router-link>
+            <router-link to="/"><p>College or Universityt</p></router-link>
+            <router-link to="/"><p>Resources</p></router-link>
+            <router-link to="/"><p>Visit Resource Hub</p></router-link>
         </div>
         <div class="f-third">
             <h4>About</h4>
-            <p>Company</p>
-            <p>Newsroom</p>
-            <p>Privacy and Trust</p>
+            <router-link to="/"><p>Company</p></router-link>
+            <router-link to="/"><p>Newsroom</p></router-link>
+            <router-link to="/"><p>Privacy and Trust</p></router-link>
+            <!-- <div class="location">
+            <router-link to="/"><p>My Location</p></router-link>
+            <iframe
+      width="600"
+      height="450"
+      frameborder="0"
+      style="border:0"
+      allowfullscreen
+      loading="lazy"
+      :src="googleMapLink"
+    ></iframe>
+        </div> -->
         </div>
         <div class="f-fourth">
             <h4>Support</h4>
-            <p>Become a Tutor</p>
-            <p>Contact Us</p>
-            <p>Code of Conduct</p>
+            <router-link to="/"><p>Become a Tutor</p></router-link>
+            <router-link to="/"><p>Contact Us</p></router-link>
+            <router-link to="/"><p>Code of Conduct</p></router-link>
         </div>
     </div>
 </template>
+<!-- <script>
+export default {
+  data() {
+    return {
+      // Replace this link with your own Google Maps link
+      googleMapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1234.5678!2dlongitude!3dlatitude!..."
+    };
+  }
+};
+</script> -->
 
 <style scoped>
 * {
     background-color: #151d34;
     /* padding: 30px; */
+}
+.f-second a {
+    text-decoration: none;
+}
+.f-third a {
+    text-decoration: none;
+}
+.f-fourth a {
+    text-decoration: none;
 }
 
 h4 {
